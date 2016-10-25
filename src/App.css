@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.mainContainer{
+    height: 40px;
+}
+
+.profileViewContainer{
+    width: 80%;
+    margin: 100px auto;
+    height: 100%;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 4px;
+}
+.leftText{
+    float: left;
+    font-size: 14px;
+    padding-top: 11px;
+}
+.addSection{
+    float: right;
+    width: 100px;
+    background-color: white;
+    border: 1px solid teal;
+    border-radius: 10px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.button{
+    width: 100px;
+    color: teal;
+}
+
+.hr{
+    border: 1px solid cyan;
+    margin-bottom: 20px;
+}
+.radioButton{
+    display: inline-block;
+    width: 100%;
+}
+
+.sectionNameInput{
+    margin-top: 20px;
+}
+
+.dropDownContainer{
+    margin: 20px 0px;
+}
+
+h3{
+    padding: 24px 24px 5px;
+}
+
+.sectionName{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.sectionContainer{
+    border: 1px dotted;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
