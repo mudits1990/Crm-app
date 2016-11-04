@@ -197,11 +197,8 @@ const mainReducer = (state=defaultState, action) => {
             if(tempSection.positionCounter > 0){
                 position++;
             }
-            Array.prototype.insert = function (index, item) {
-                this.splice(index, 0, item);
-            };
 
-            sections.insert(position, {
+            sections = sections.splice(position, 0, {
                 name: tempSection.name,
                 editSection: false,
                 deleteSection: false,
