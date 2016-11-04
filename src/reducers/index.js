@@ -194,7 +194,7 @@ const mainReducer = (state=defaultState, action) => {
             let position = sections.findIndex((section) => {
                return tempSection.position === section.name;
             });
-            if(tempSection.positionCounter){
+            if(tempSection.positionCounter > 0){
                 position++;
             }
             Array.prototype.insert = function (index, item) {
@@ -258,7 +258,7 @@ const mainReducer = (state=defaultState, action) => {
                 return fieldSection.name === section.name;
             });
             sections[saveFieldSectionPosition].showAddField = !sections[saveFieldSectionPosition].showAddField;
-            tempFieldAttributes.delete = false
+            tempFieldAttributes.delete = false;
             sections[saveFieldSectionPosition].fields.push(tempFieldAttributes);
             return {
                 ...state,
